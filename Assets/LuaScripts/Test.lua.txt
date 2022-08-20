@@ -1,0 +1,13 @@
+local UnityEngine=CS.UnityEngine
+xlua.hotfix(CS.Cube,'Update',function(self)
+	if(UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.S)) then
+		self.rigidbody:AddForce(UnityEngine.Vector3.up*100)
+	end
+end)
+
+xlua.hotfix(CS.Load,'Start',function(self)
+
+	self.hot:LoadResource()
+
+end)
+

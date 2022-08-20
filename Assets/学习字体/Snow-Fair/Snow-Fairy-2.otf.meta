@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0b179e219dc1df04d9e0bd198905a2cf
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Snow Fairy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 64c7386a378231f4bbe2cbaa8cca0e51, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
