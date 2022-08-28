@@ -16,8 +16,6 @@ public class PlayerController : MonoBehaviour
 
     private bool isDead;
 
-    private bool isOpen_Bag;
-
     public GameObject energyMask;
 
     private void Awake()
@@ -230,9 +228,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            isOpen_Bag = !isOpen_Bag;
-            InventoryManager.Instance.OpenorCloseBag(isOpen_Bag);
+            bool isOpen = FindObjectOfType<InventoryManager>().transform.GetChild(0).gameObject.activeInHierarchy;
+            InventoryManager.Instance.OpenorCloseBag(!isOpen);
         }
-        isOpen_Bag = FindObjectOfType<InventoryManager>().transform.GetChild(0).gameObject.activeInHierarchy;
     }
 }

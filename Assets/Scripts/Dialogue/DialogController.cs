@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogController : Singleton<DialogController>
 {
-    public DialogueNPC curDialogueNPC;
+    private DialogueNPC curDialogueNPC;
 
     private Stack<string> dialogueEmptyStack;
 

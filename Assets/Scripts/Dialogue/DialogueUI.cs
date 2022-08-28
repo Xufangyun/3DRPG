@@ -12,10 +12,18 @@ public class DialogueUI : MonoBehaviour
     private void OnEnable()
     {
         EventHandler.ShowDialogue += OnShowDialogue;
+        EventHandler.CloseDialogue += OnCloseDialogue;
     }
     private void OnDisable()
     {
         EventHandler.ShowDialogue -= OnShowDialogue;
+        EventHandler.CloseDialogue -= OnCloseDialogue;
+    }
+
+    private void OnCloseDialogue()
+    {
+        panel.SetActive(false);
+        this.dialogue.text = string.Empty;
     }
 
     private void OnShowDialogue(string dialogue)

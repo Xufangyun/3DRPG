@@ -8,7 +8,7 @@ public class DialogueNPC : MonoBehaviour
 
     public DialogueData_SO dialogueFinish;
 
-    public bool isCanTalk;
+    private bool isCanTalk;
 
     private void Awake()
     {
@@ -37,5 +37,6 @@ public class DialogueNPC : MonoBehaviour
         {
             isCanTalk = false;
         }
+        EventHandler.CallCloseDialogue();
     }
 }

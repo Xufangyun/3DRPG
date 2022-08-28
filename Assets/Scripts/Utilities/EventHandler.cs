@@ -82,4 +82,11 @@ public static class EventHandler
     {
         ShowDialogue?.Invoke(dialogue);
     }
+
+    public static Action CloseDialogue;
+
+    public static void CallCloseDialogue()
+    {
+        CloseDialogue?.Invoke();
+    }
 }
