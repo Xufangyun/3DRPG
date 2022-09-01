@@ -155,12 +155,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d53da13fe69d34eb17ad0f79b316f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  templateData: {fileID: 11400000, guid: ad532c81fde69d1469a4e7da16ecc3bf, type: 2}
-  characterData: {fileID: 0}
+  characterData: {fileID: 11400000, guid: ad532c81fde69d1469a4e7da16ecc3bf, type: 2}
   attackData: {fileID: 11400000, guid: 5ed10f3f12e3441448e69a9822655141, type: 2}
   isCritical: 0
-  isGuard: 0
+  isGuard: 1
   isGolem: 0
+  isImmune: 0
 --- !u!65 &789032216123175819
 BoxCollider:
   m_ObjectHideFlags: 0

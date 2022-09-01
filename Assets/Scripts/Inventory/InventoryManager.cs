@@ -11,6 +11,7 @@ public class InventoryManager : Singleton<InventoryManager>
     public Text itemInfo;
     public GameObject myBag;
     private List<Slot> slotList = new List<Slot>();
+    private GameObject curWeapon;
 
 
     protected override void Awake()
@@ -48,5 +49,13 @@ public class InventoryManager : Singleton<InventoryManager>
     {
         itemInfo.text = itemDescription;
     }
-
+    public void SwitchWeapon(GameObject weapon)
+    {
+        curWeapon = weapon;
+    }
+    public void UseBtnOnClicked()
+    {
+        EventHandler.CallSwitchWeapons(curWeapon);
+        bagData.curWeapon = curWeapon;
+    }
 }

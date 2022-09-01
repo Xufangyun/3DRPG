@@ -76,6 +76,7 @@ public static class EventHandler
         CancelSelectedChangeShaderEvent?.Invoke();
     }
 
+    //显示对话框
     public static Action<string> ShowDialogue;
 
     public static void CallShowDialogue(string dialogue)
@@ -83,10 +84,18 @@ public static class EventHandler
         ShowDialogue?.Invoke(dialogue);
     }
 
+    //离开关闭对话框
     public static Action CloseDialogue;
 
     public static void CallCloseDialogue()
     {
         CloseDialogue?.Invoke();
+    }
+
+    //切换武器
+    public static Action<GameObject> SwitchWeapons;
+    public static void CallSwitchWeapons(GameObject weaponPrefab)
+    {
+        SwitchWeapons?.Invoke(weaponPrefab);
     }
 }

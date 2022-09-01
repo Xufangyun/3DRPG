@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
-    public CharacterData_SO templateData;
+    //public CharacterData_SO templateData;
 
     public CharacterData_SO characterData;
 
@@ -24,8 +24,8 @@ public class CharacterStats : MonoBehaviour
 
     private void Awake()
     {
-        if(templateData!=null)
-            characterData = Instantiate(templateData);
+        //if(templateData!=null)
+        //    characterData = Instantiate(templateData);
     }
 
     #region Read from CharacterData_SO

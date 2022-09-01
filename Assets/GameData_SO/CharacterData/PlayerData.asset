@@ -20,8 +20,8 @@ MonoBehaviour:
   patrolRange: 0
   lookAtTime: 0
   killExp: 0
-  currentLevel: 1
+  currentLevel: 2
   maxLevel: 10
-  baseExp: 10
-  currentExp: 0
+  baseExp: 22
+  currentExp: 10
   levelBuff: 0.2

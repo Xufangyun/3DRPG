@@ -31,3 +31,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  curWeapon: {fileID: 1582945655732574, guid: 04ba016a0f1228743952617bf9b34db9, type: 3}

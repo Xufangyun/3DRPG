@@ -905,12 +905,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d53da13fe69d34eb17ad0f79b316f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  templateData: {fileID: 11400000, guid: bc85f75d8724bde4ba4b975c94487d7f, type: 2}
-  characterData: {fileID: 0}
+  characterData: {fileID: 11400000, guid: bc85f75d8724bde4ba4b975c94487d7f, type: 2}
   attackData: {fileID: 11400000, guid: ec4cba0058f9d4b4ab898d8a28eed357, type: 2}
   isCritical: 0
   isGuard: 0
   isGolem: 0
+  isImmune: 0
 --- !u!195 &1786481553
 NavMeshAgent:
   m_ObjectHideFlags: 0

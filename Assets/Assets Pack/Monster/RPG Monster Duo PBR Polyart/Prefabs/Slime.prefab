@@ -150,12 +150,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d53da13fe69d34eb17ad0f79b316f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  templateData: {fileID: 11400000, guid: bd70b5e730ba8b44481320e1ae36ef20, type: 2}
-  characterData: {fileID: 0}
+  characterData: {fileID: 11400000, guid: bd70b5e730ba8b44481320e1ae36ef20, type: 2}
   attackData: {fileID: 11400000, guid: 3844e62a41b432d4aa21721ee0c128b3, type: 2}
   isCritical: 0
-  isGuard: 1
+  isGuard: 0
   isGolem: 0
+  isImmune: 0
 --- !u!114 &8923753536072745184
 MonoBehaviour:
   m_ObjectHideFlags: 0

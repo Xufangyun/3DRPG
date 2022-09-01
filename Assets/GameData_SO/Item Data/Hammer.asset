@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01fce3ad6eedc1418cf81f9ccd29bf3, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
+  prefab: {fileID: 1582945655732574, guid: 04ba016a0f1228743952617bf9b34db9, type: 3}
   itemName: Hanmer
   itemSprite: {fileID: 21300000, guid: af50dc4fa7b6d314895d0f8c79adb4a5, type: 3}
   itemHeld: 1

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SaveManager : Singleton<SaveManager>
 {
     string sceneName;
-
+    public CharacterData_SO characterData;
     public string SceneName { get => PlayerPrefs.GetString(sceneName); }
     protected override void Awake()
     {
@@ -36,7 +36,7 @@ public class SaveManager : Singleton<SaveManager>
 
     public void SavePlayerData()
     {
-        Save(GameManager.Instance.playerStats.characterData, GameManager.Instance.playerStats.characterData.name);
+        Save(characterData, characterData.name);
     }
 
     public void SaveBagData()
@@ -46,8 +46,7 @@ public class SaveManager : Singleton<SaveManager>
 
     public void LoadPlayerData()
     {
-        Load(GameManager.Instance.playerStats.characterData, GameManager.Instance.playerStats.characterData.name);
-        
+        Load(characterData, characterData.name);
     }
 
     public void LoadBagData()

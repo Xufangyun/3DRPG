@@ -333,7 +333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1077356410
 Transform:
   m_ObjectHideFlags: 0
@@ -404,12 +404,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d53da13fe69d34eb17ad0f79b316f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  templateData: {fileID: 11400000, guid: c2cc0f518c29c204693d9039d261cec2, type: 2}
-  characterData: {fileID: 0}
+  characterData: {fileID: 11400000, guid: c2cc0f518c29c204693d9039d261cec2, type: 2}
   attackData: {fileID: 11400000, guid: c5be6dc70a2662840b0d003ccb4d739f, type: 2}
   isCritical: 0
   isGuard: 1
   isGolem: 1
+  isImmune: 0
 --- !u!114 &3260000767918927271
 MonoBehaviour:
   m_ObjectHideFlags: 0

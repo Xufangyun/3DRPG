@@ -31,5 +31,6 @@ public class Slot : MonoBehaviour
     public void ItemOnClicked()
     {
         InventoryManager.Instance.UpdateItemInfo(item.itemInfo);
+        InventoryManager.Instance.SwitchWeapon(item.prefab);
     }
 }

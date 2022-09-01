@@ -87,10 +87,10 @@ public class SceneController : Singleton<SceneController>
         {
             yield return StartCoroutine(fade.Fade(1));
             yield return SceneManager.LoadSceneAsync(scene);
-            yield return player = Instantiate(playerPrefab, GameManager.Instance.GetEntrance().position, GameManager.Instance.GetEntrance().rotation);
-
             SaveManager.Instance.LoadPlayerData();
             SaveManager.Instance.LoadBagData();
+            yield return player = Instantiate(playerPrefab, GameManager.Instance.GetEntrance().position, GameManager.Instance.GetEntrance().rotation);
+            
             yield return StartCoroutine(fade.Fade(0));
             yield break;
         }
@@ -98,11 +98,13 @@ public class SceneController : Singleton<SceneController>
 
     IEnumerator LoadMain()
     {
-        yield return StartCoroutine(fade.Fade(1));
-        yield return SceneManager.LoadSceneAsync("MenuScene");
         //±£´æÊý¾Ý
         SaveManager.Instance.SavePlayerData();
         SaveManager.Instance.SaveBagData();
+
+        yield return StartCoroutine(fade.Fade(1));
+        yield return SceneManager.LoadSceneAsync("MenuScene");
+        
         yield return StartCoroutine(fade.Fade(0));
         yield break;
     }

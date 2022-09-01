@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject energyMask;
 
+    public Transform weaponParent;
+
+    public InventoryData bagData;
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -26,9 +30,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
-        
         EventHandler.CallUpdateHealthUI(GameManager.Instance.playerStats);
         EventHandler.CallUpdatePlayerExpUI(GameManager.Instance.playerStats);
+        SwitchWeapon(bagData.curWeapon);
     }
     private void Update()
     {
@@ -48,6 +52,7 @@ public class PlayerController : MonoBehaviour
         EventHandler.EndGameEvent += OnEndGameEvent;
         EventHandler.EnemyCriticalEvent += OnEnemyCriticalEvent;
         EventHandler.PlayerDizzyEvent += OnPlayerDizzyEvent;
+        EventHandler.SwitchWeapons += OnSwitchWeapons;
         GameManager.Instance.RigisterPlayer(characterStats);
     }
 
@@ -61,6 +66,18 @@ public class PlayerController : MonoBehaviour
         EventHandler.EndGameEvent -= OnEndGameEvent;
         EventHandler.EnemyCriticalEvent -= OnEnemyCriticalEvent;
         EventHandler.PlayerDizzyEvent -= OnPlayerDizzyEvent;
+        EventHandler.SwitchWeapons -= OnSwitchWeapons;
+    }
+
+    private void OnSwitchWeapons(GameObject weaponPrefab)
+    {
+        Destroy(weaponParent.transform.GetChild(0).gameObject);
+        SwitchWeapon(weaponPrefab);
+    }
+    private void SwitchWeapon(GameObject weaponPrefab)
+    {
+        Instantiate(weaponPrefab, weaponParent);
+        weaponPrefab.layer = 6;
     }
 
     /// <summary>

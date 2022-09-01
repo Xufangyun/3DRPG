@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23896577591965056}
   - component: {fileID: 8023311534190931059}
   - component: {fileID: 90088091843000717}
-  m_Layer: 2
+  m_Layer: 6
   m_Name: hammer2H10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c9b96fd1905d424481cb365d4bf1d33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisItem: {fileID: 11400000, guid: 8d487b9e4dd687349982ceaab746bddc, type: 2}
+  playerInventory: {fileID: 11400000, guid: 40077afb4fe854740be3aa02f64e5e70, type: 2}
 --- !u!65 &90088091843000717
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -7,4 +7,5 @@ using UnityEngine;
 public class InventoryData : ScriptableObject
 {
     public List<ItemData_SO> itemList = new List<ItemData_SO>();
+    public GameObject curWeapon;
 }
